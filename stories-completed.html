@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hackademy | CodeSpaces</title>
+    <link rel="canonical" href="story.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-video"
+        src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async custom-element="amp-story"
+        src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
+    <style amp-custom>
+      amp-story {
+        font-family: 'Oswald',sans-serif;
+        color: #fff;
+      }
+      amp-story-page {
+        background-color: #000;
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 2.875em;
+        font-weight: normal;
+        line-height: 1.174;
+      }
+      p {
+        font-weight: normal;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        color: #fff;
+      }
+      q {
+        font-weight: 300;
+        font-size: 1.1em;
+      }
+      amp-story-grid-layer.bottom {
+        align-content:end;
+      }
+      amp-story-grid-layer.noedge {
+        padding: 0px;
+      }
+      amp-story-grid-layer.center-text {
+        align-content: center;
+      }
+      a {
+        color: greenyellow;
+      }
+      span {
+        color: aqua;
+      }
+      .wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+      }
+      .banner-text {
+        text-align: center;
+        background-color: #000;
+        line-height: 2em;
+        border-radius: .18rem;
+      }
+      .gradient-top{
+        background: linear-gradient(180deg,rgba(0,0,0,1),rgba(255,255,255,.0));
+      }
+      .gradient-bottom {
+        background: linear-gradient(0deg,rgba(0,0,0,.6),rgba(255,255,255,.0));
+      }
+      .gradient-left {
+        background: linear-gradient(45deg,rgba(0,0,0,1),rgba(255,255,255,.0));
+      }
+      .gradient-right {
+        background: linear-gradient(270deg,rgba(0,0,0,1),rgba(255,255,255,.0));
+      }
+      .gradient-bottom, .gradient-top, .gradient-left, .gradient-right {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cover page -->
+    <amp-story standalone
+        title="Hackademy-CodeSpaces"
+        publisher="Manuel Ortiz"
+        publisher-logo-src="./assets/AMP-Brand-White-Icon.svg"
+        poster-portrait-src="https://cdn.mos.cms.futurecdn.net/dPhrT7LuSFP47tYWHd2emk.jpg">
+      <amp-story-page id="cover">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://cdn.mos.cms.futurecdn.net/dPhrT7LuSFP47tYWHd2emk.jpg"
+              width="720" height="1280"
+              layout="responsive">
+          </amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="gradient-top">
+          <h1>CodeSpaces</h1>
+          <p>Modifica tus repositorios con editores basados en web.</p>
+          <p style="text-align: right;">- Manuel Ortiz</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 1 (Example): 2 layers (fill + thirds) -->
+      <amp-story-page id="page1">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://github.githubassets.com/images/modules/site/social-cards/github-social.png" 
+              width="720" height="1280"
+              layout="responsive">
+          </amp-img>
+        </amp-story-grid-layer>
+          <amp-story-grid-layer template="thirds" class="gradient-top">
+            <h1 grid-area="upper-third"></h1>
+            <p grid-area="upper-third">Primero, vamos a <a href="http://github.com" target="_blank" rel="noopener noreferrer">GitHub</a> y buscamos el repositorio que queremos modificar.</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 2 (Example): 2 layers (fill + thirds) -->
+      <amp-story-page id="page2">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://user-images.githubusercontent.com/856858/130119109-4769f2d7-9027-4bc4-a38c-10f297499e8f.gif" 
+              width="720" height="1280"
+              layout="responsive">
+          </amp-img>
+        </amp-story-grid-layer>
+          <amp-story-grid-layer template="thirds" class="gradient-bottom">
+            <h1 grid-area="upper-third"></h1>
+            <p grid-area="lower-third"> Una vez que estemos en el repositorio, en nuestro teclado presionaremos el boton del <span> puntito [ . ]</span>.</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 3 (Example): 2 layers (fill + thirds) -->
+      <amp-story-page id="page3">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://github.githubassets.com/images/modules/site/codespaces/illo-codespaces-desktop.png" 
+              width="720" height="1280"
+              layout="responsive">
+          </amp-img>
+        </amp-story-grid-layer>
+          <amp-story-grid-layer template="thirds" class="gradient-bottom">
+            <h1 grid-area="upper-third"></h1>
+            <p grid-area="lower-third"> Se abrirá <span>github.dev</span> que es un editor de texto en la nube.</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 4 (Example): 1 layer (vertical) -->
+      <amp-story-page id="page4">
+        <amp-story-grid-layer template="vertical">
+          <h1>Edita</h1>
+          <amp-img src="./assets/mujeres.png"
+              width="720" height="1280"
+              layout="responsive">
+          </amp-img>
+          <p>Aquí podrás hacer los mismos cambios que puedes hacer en <span>Visual Studio Code</span>.</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+
+      <!-- Page 5 (Rabbit): 3 layers (fill (video) + vertical + vertical) -->
+      <amp-story-page id="page5">
+        <amp-story-grid-layer template="fill">
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster="./assets/rabbit.jpg"
+                layout="responsive">
+              <source src="./assets/rabbit.mp4" type="video/mp4">
+          </amp-video>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical">
+          <h1>¡Felicidades!</h1>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p>Haz realizado tu primera modificación de un repositorio con un editor basado en la nube.</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 6 (Bird): 3 layers (fill + vertical + vertical) + Audio-->
+      <!--
+      <amp-story-page id="page6" background-audio="./assets/bird-singing.mp3">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="./assets/bird.jpg"
+              width="720" height="1280"
+              layout="responsive">
+          </amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical">
+          <h1>Birds</h1>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <q>A bird is three things: Feathers, flight and song, And feathers are the least of these. -Marjorie Allen Seiffert</q>
+        </amp-story-grid-layer>
+      </amp-story-page>
+      -->
+
+      <!-- Page 7 (Collage): 2 layers + animations -->
+      <amp-story-page id="page7">
+        <amp-story-grid-layer template="vertical" class="noedge">
+          <div class="wrapper">
+            <amp-img src="https://github.githubassets.com/images/modules/site/social-cards/github-social.png"
+                width="720" height="1280"
+                layout="responsive"
+                animate-in="fade-in"
+                animate-in-delay="0.4s">
+            </amp-img>
+            <amp-img src="https://user-images.githubusercontent.com/856858/130119109-4769f2d7-9027-4bc4-a38c-10f297499e8f.gif"
+                width="720" height="1280"
+                layout="responsive"
+                animate-in="fade-in"
+                animate-in-delay="0.6s">
+            </amp-img>
+            <amp-img src="./assets/mujeres.png"
+                width="720" height="1280"
+                layout="responsive"
+                animate-in="fade-in"
+                animate-in-delay=".8s">
+            </amp-img>
+            <amp-img src="./assets/rabbit.jpg"
+                width="720" height="1280"
+                layout="responsive"
+                animate-in="fade-in"
+                animate-in-delay="1s">
+            </amp-img>
+          </div>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="center-text">
+          <p class="banner-text" animate-in="whoosh-in-right"> ¡Aprende mas en <a href="http://futuredevelopers.lat" target="_blank" rel="noopener noreferrer">futuredevelopers.lat</a>!</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+      <!-- Bookend -->
+      <amp-story-bookend src="./bookend.json" layout="nodisplay"></amp-story-bookend>
+    </amp-story>
+  </body>
+</html>
