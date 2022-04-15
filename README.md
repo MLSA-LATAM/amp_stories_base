@@ -2,6 +2,8 @@
 
 This folder contains the files for the "Create a visual AMP Story" tutorial.
 
+See the deployed page: [Click Here!](https://manuos.codes/amp_stories_base/)
+
 ## Files included
 
 ```text
